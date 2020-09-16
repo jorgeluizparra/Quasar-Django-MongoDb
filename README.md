@@ -10,8 +10,11 @@
 `pip install pipenv`
 
 ## Run app
-pipenv shell
-py app.py
+Open the shell
+`pipenv shell`
+
+Run the app
+`py app.py`
 
 ## APIs
 ### GET -> http://127.0.0.1:5000/transactions
