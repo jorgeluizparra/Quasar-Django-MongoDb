@@ -10,6 +10,9 @@
 `pip install pipenv`
 
 ## Run app
+Install the dependencies
+`pipenv install`
+
 Open the shell
 `pipenv shell`
 
