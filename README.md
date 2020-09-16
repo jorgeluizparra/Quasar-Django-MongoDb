@@ -3,10 +3,10 @@
 ## Requirements
 1. MongoDB, python, pip, pipenv installed in the local machine
 
-###Install Pip
+### To install `pip` run the command
 `python -m pip install -U pip`
 
-###Install Pipenv
+### To install `pipenv` run the command
 `pip install pipenv`
 
 ## Run app
