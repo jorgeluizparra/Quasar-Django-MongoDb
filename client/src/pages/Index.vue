@@ -75,6 +75,10 @@ export default {
                     .then(response => {
                         // console.log(response.data)
                         this.transactions.push(response.data)
+                        this.formData.client_cpf = ''
+                        this.formData.total = ''
+                        this.formData.received = ''
+                        this.formData.bills_quantities = response.data.bills_quantities
                     })
                     .catch(error => {
                         console.log(error)
@@ -84,6 +88,7 @@ export default {
                     .put('http://127.0.0.1:5000/transactions/' + formData.id, formData)
                     .then(response => {
                         console.log(response.data)
+                        this.formData = response.data
                     })
                     .catch(error => {
                         console.log(error)
@@ -145,7 +150,7 @@ export default {
                 })
         }
     },
-    mounted() {
+    beforeMount() {
         this.getAll()
     },
 }
