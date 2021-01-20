@@ -18,7 +18,7 @@ db = initialize_db(app)
 # Working test
 @app.route('/')
 def test():
-    return '<h3>Working...</h3>'
+    return '<h3>Service is running...</h3>'
 
 # Get all stored transactions
 @app.route('/transactions')
